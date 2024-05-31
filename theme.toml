@@ -1,0 +1,12 @@
+name = "almandine"
+license = "GPLv3"
+licenselink = ""
+description = "My first theme for Hugo!"
+homepage = "https://github.com/k3rs3d/almandine"
+tags = ["minimalist", "retro", "dark", "blog"]
+features = ["blog"]
+min_version = 0.90
+
+[author]
+  name = "Kersed"
+  homepage = "https://kersed.net"

@@ -1,0 +1,289 @@
+/* IMPORT FONTS */
+
+@font-face {
+	font-family: 'kelvinch';
+	src: url('../font/Kelvinch-Roman.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+@font-face {
+	font-family: 'internet';
+	src: url('../font/LTInternet-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}	
+
+/* LAYOUT */
+
+body {
+  color: #ffe;
+  background-color: #202020;
+  font-family: 'internet', sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 60rem;
+  padding: 0.5rem;
+  margin: auto;
+  width: 90%;
+}
+
+.content {
+	text-align: center;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5 {
+  color: #fff;
+  font-family: 'kelvinch', serif;
+  font-weight: bolder;
+  line-height: 1.3;
+  text-shadow: 2px 2px 2px #000;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+/* Horizontal Divider */
+hr { 
+	border: 2px dashed #444;
+}
+
+/* Links */
+a {
+  color: #f55;
+  text-decoration-style: dotted;
+  display: inline-block;
+}
+a:hover {
+	color: #fff;
+	background-color: #f00;
+	text-decoration: none;
+	text-shadow: 0 0;
+}
+
+/* CODE */
+
+code {
+    background-color: #303030;
+    border: 1px solid #999;
+    border-radius: 2px;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+code:hover {
+	border: 1px solid #f55;
+}
+
+/* inline code */
+p code {
+	color: #ddd;
+}
+
+/* block code */
+pre code {
+	display: block; 
+	padding: 10px;
+    margin: 10px 0;
+	word-wrap: break-word; /* allow long code to break */
+    white-space: pre-wrap; /* respect whitespace */
+    overflow-x: auto; /* add scrollbar if necessary */
+	font-size: 18px;
+}
+
+/* NAVIGATION */
+
+.site-nav 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.site-nav .logo { 
+  color: #fff;
+  background-color:#690000;
+  text-decoration: none;
+  font-weight: bolder;
+  padding-left: 0.1em;
+}
+
+.site-nav .logo:hover {
+	background-color: #f00;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li {
+  margin-right: 1rem;
+}
+
+/* STYLING */ 
+/* "Window" box effect: */
+.window {
+  text-align: left;
+  display: block;
+  padding: 0rem;
+  margin-bottom: 2rem;
+  background-color: #333;
+  border: 4px solid #222;
+  border-color: #444 #111 #111 #444;
+  box-shadow: 8px 12px 16px #000;
+}
+
+.window-dynamic {
+	display: inline-block;
+}
+
+.window-header h1, .window-header h2, .window-header h3, .window-header h4 {
+  margin: 0rem;
+  padding: 0rem;
+  padding-top: 0.25rem;
+  background-color: #444;
+}
+
+.window-header h2, .window-header h3, .window-header h4 {
+	text-indent: 0.25rem;
+}
+
+.window-content {
+  padding: 0.5rem;
+  padding-top: 0rem;
+}
+
+/* Pagination styling */
+
+.pagination {
+	display: inline-block;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: bold;
+	text-align: center;
+	padding: 0rem 2rem;
+}
+
+.pagination a {
+	/* Style paging links */ 
+}
+
+.pagination ul {
+	padding: 0;
+	list-style: inside;
+	list-style-type: square;
+}
+
+.pagination .pagination__buttons {
+	display: auto;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+/* Table of Contents */
+
+details {
+	font-size: 16px;
+	border-top: 2px dashed #333;
+	border-bottom: 2px dashed #333;
+	background-color: #282828;
+	width: auto;
+	padding-left: 3rem;
+}
+
+.table-of-contents {
+	
+}
+
+/* Post meta */
+.post-meta {
+	color: #aaa;
+	font-size: 16px;
+}
+.post-date {
+}
+.post-description {
+	color: #ddd;
+}
+
+/* Tags */
+.tags a {
+	color: #ccc;
+}
+.tags a:hover {
+	color: #fff;
+}
+
+/* Read More */
+.readmore {
+	font-weight: bold;
+}
+
+/* Post list/summaries */
+.post-snippet {
+
+}
+
+.post-snippet h3 {
+  margin-bottom: 0.3rem;
+}
+
+/* Block quotes */
+blockquote {
+  border-left: 4px solid #c00;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  font-style: italic;
+  background-color: #333;
+}
+
+.boxedtext {
+	border: 2px dashed #555;
+	margin: 1rem;
+	padding: 1rem;
+}	  
+
+
+/* For small screens */
+@media screen and (max-width: 45rem) {
+  body {
+    font-size: 18px;
+    padding: 0rem;
+	width: 100%;
+  }
+  
+  .window {
+	margin-bottom: 1rem;
+	border: 2px solid #222;
+	box-shadow: 4px 6px 8px #000;
+  }
+  
+  .site-nav,
+  .main-menu {
+    flex-direction: column;
+	align-items: flex-start;
+  }
+
+  .site-nav a {
+    padding: 0.5rem;
+    padding-left: 0;
+  }
+}

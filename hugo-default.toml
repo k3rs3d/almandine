@@ -1,0 +1,74 @@
+baseURL = "/"
+title = "Almandine"
+theme = "Almandine"
+paginate = 8
+
+enableInlineShortcodes = true
+
+[params]
+ToC = true
+contentTypeName = "posts"
+
+[languages]
+  [languages.en]
+	[languages.en.params]
+		languageName = "English"
+		copyright = "[your name here]"
+		tagline = "[website tagline here]"
+		jumpToTop = "[jump to top]" # (Delete this to remove "Jump to Top" link in footer)
+		readOtherPosts = "Read other posts"
+		newerPosts = "Newer posts"
+		olderPosts = "Older posts"
+		readMore = "Read more"
+		words = "words"
+
+	# MENU LINKS	
+	[languages.en.menu]
+
+	[[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+		weight = 5
+
+      [[languages.en.menu.main]]
+        identifier = "articles"
+        name = "Articles"
+        url = "/posts/"
+		weight = 10
+		
+[types]
+  "posts" = "posts"
+		
+[permalinks]
+  posts = "posts/:slug/"
+
+
+[related]
+  includeNewer = true
+  threshold = 66
+  toLower = true
+[[related.indices]]
+    applyFilter = false
+    cardinalityThreshold = 0
+    name = 'tags'
+    pattern = ''
+    toLower = true
+    type = 'basic'
+    weight = 10
+[[related.indices]]
+  applyFilter = false
+  cardinalityThreshold = 0
+  name = 'keywords'
+  pattern = ''
+  toLower = true
+  type = 'basic'
+  weight = 10
+[[related.indices]]
+  applyFilter = false
+  cardinalityThreshold = 0
+  name = 'date'
+  pattern = ''
+  toLower = false
+  type = 'basic'
+  weight = 1
