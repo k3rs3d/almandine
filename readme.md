@@ -2,6 +2,8 @@
 
 This is my first ever Hugo theme! I'm still learning, and it's a work in progress. 
 
+![Screenshot of Almandine theme work-in-progress](./preview.jpg)
+
 ## Goals 
 
 - Accessibility first; screen-reader friendly
